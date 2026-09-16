@@ -1,1 +1,63 @@
-style.css code
+*{
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+    background-color: #B19ACB;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    border-bottom: 3px solid #D8C8E8;
+}
+
+header h1 {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+header h2 {
+  color: #F3EEF8;
+  margin: 8px 0 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+    font-size: 1.5em
+}
+
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #FFFFFF;
+    padding: 5px 10px;
+}
+
+header nav a:hover {
+    color: #D8C8E8;
+}
+
+.images {
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    animation:changePhoto 20s infinite;
+}
+
+@keyframes changePhoto {
+    0%, 20% {background-image:url("picture1.jpeg");}
+    21%, 40% {background-image:url("picture2.jpeg");}
+    41%, 60% {background-image:url("picture3.jpeg");}
+    61%, 80% {background-image:url("picture4.jpeg");}
+    81%, 100% {background-image:url("picture5.jpeg");}
+}
+
+form{
+    font-size: 1.2em;
+}
+
+table{
+    font-size:1.2em;
+}
+
