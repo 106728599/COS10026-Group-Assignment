@@ -38,8 +38,22 @@
             <p><label for="lastName">Last Name: </label>
                 <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z ]{1,20}" required>            
             </p>
-            <p><label for="dateOfBirth">Date Of Birth: </label>
-                <input type="text" name="dateOfBirth" id="dateOfBirth" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}" required>
+            <p><label for="dateOfBirth">Date Of Birth: </label> 
+                <!--DATE-->
+                <!--For pattern 0[1-9] means "number starting from 0 followed by any number from 1 to 9, which covers 01 to 09"-->
+                <!--For pattern [12][0-9] means "number starting from either 1 or 2 followed by any number from 1 to 9, which covers 10 to 29"-->
+                <!--For pattern 3[0-1] means "number starting from 3 followed by any number from 0 to 1, which covers 30 to 31"-->
+
+                <!--MONTH-->
+                <!--For pattern 0[1-9] means "number starting from 0 followed by any number from 1 to 9, which covers 01 to 09"-->
+                <!--For pattern 1[0-2] means "number starting from 1 followed by any number from 0 to 2, which covers 10 to 12"-->
+                
+                <!--YEAR-->
+                <!--For pattern 19[0-9]{2} means "number starting from 19 followed by any 2 numbers from 0 to 9, which covers 1900 to 1999"-->
+                <!--For pattern [2-9][0-9]{3} means "number starting from any number between 2 to 9 followed by any 3 numbers from 0 to 9, which covers 2000 to 9999"-->
+
+                <!--"/" is the symbol slash in dd/mm/yyyy and "|" is OR-->
+                <input type="text" name="dateOfBirth" id="dateOfBirth" placeholder="dd/mm/yyyy" pattern="(0[1-9]|[12][0-9]|3[0-1]/0[1-9]|1[0-2]/19[0-9]{2}|[2-9][0-9]{3})" required>
             </p>
             
             <fieldset>
@@ -75,7 +89,7 @@
                 <input type="text" name="postcode" id="postcode" pattern="\d{4}" required>
             </p>
             <p><label for="email">Email: </label>
-                <input type="text" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                <input type="email" name="email" id="email" required>
             </p>
             <p><label for="phoneNumber">Phone Number: </label>
                 <input type="text" name="phoneNumber" id="phoneNumber" pattern="\d{8,12}" required>
