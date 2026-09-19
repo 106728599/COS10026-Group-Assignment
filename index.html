@@ -31,12 +31,38 @@
             text-align: center;
             font-size: 24px
         }
+
+        #countryNav {
+            margin-top: 20px;
+            width: 80px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #countryNav a {
+            color: none;
+            text-decoration: underline;
+            font-weight: bold;
+            border: none;
+            padding: none;
+            font-size: 18px;
+        }
+
+        #countryNav a:hover {
+            background-color: #8f80ad;
+        }
+        
+        .country{
+            scroll-margin-top: 260px;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="Company Logo.jpeg" alt="TRAVEXA Logo" width="100" height="100">
+        <img src="Company Logo.jpg" alt="TRAVEXA Logo" width="100" height="100">
         
         <br>
         <h2>Building The Future Of Travel</h2>
@@ -57,10 +83,20 @@
         <button type="search">Search</button>
     </form>
     <p style="font-size: 24px; font-weight: bold;">Featured Destinations</p>
+    <nav id="countryNav">
+        <li><a href="#Japan">Japan</a></li>
+        <li><a href="#China">China</a></li>
+        <li><a href="#Greece">Greece</a></li>
+        <li><a href="#Korea">Korea</a></li>
+        <li><a href="#Indonesia">Indonesia</a></li>
+        <li><a href="#United States">United States</a></li>
+        <li><a href="#Australia">Australia</a></li>
+        <br><br><br><br><br>
+    </nav>
     <div>
         <table>
             <tr>
-                <th colspan="5">Japan</th>
+                <th colspan="5" class="country" id="Japan"><u>Japan</u></th>
             </tr>
             <tr>
                 <td>Tokyo</td>
@@ -70,10 +106,10 @@
                 <td>Shikoku</td>
             </tr>
         </table>
-        <br><br>
+        <br><br><br><br><br><br><br><br><br><br>
         <table>
             <tr>
-                <th colspan="5">China</th>
+                <th colspan="5" class="country" id="China"><u>China</u></th>
             </tr>
             <tr>
                 <td>Beijing</td>
@@ -83,10 +119,10 @@
                 <td>Chengdu</td>
             </tr>
         </table>
-        <br><br>
+        <br><br><br><br><br><br><br><br><br><br>
         <table>
             <tr>
-                <th colspan="5">Greece</th>
+                <th colspan="5" class="country" id="Greece"><u>Greece</u></th>
             </tr>
             <tr>
                 <td>Athens</td>
@@ -96,10 +132,10 @@
                 <td>Corfu</td>
             </tr>
         </table>
-        <br><br>
+        <br><br><br><br><br><br><br><br><br><br>
         <table>
             <tr>
-                <th colspan="5">Korea</th>
+                <th colspan="5" class="country" id="Korea"><u>Korea</u></th>
             </tr>
             <tr>
                 <td>Seoul</td>
@@ -109,10 +145,10 @@
                 <td>Gyeongju</td>
             </tr>
         </table>
-        <br><br>
+        <br><br><br><br><br><br><br><br><br><br>
         <table>
             <tr>
-                <th colspan="5">Indonesia</th>
+                <th colspan="5" class="country" id="Indonesia"><u>Indonesia</u></th>
             </tr>
             <tr>
                 <td>Jakarta</td>
@@ -122,10 +158,10 @@
                 <td>Bandung</td>
             </tr>
         </table>
-        <br><br>
+        <br><br><br><br><br><br><br><br><br><br>
         <table>
             <tr>
-                <th colspan="5">United States</th>
+                <th colspan="5" class="country" id="United States"><u>United States</u></th>
             </tr>
             <tr>
                 <td>New York</td>
@@ -135,10 +171,10 @@
                 <td>San Francisco</td>
             </tr>
         </table>
-        <br><br>
+        <br><br><br><br><br><br><br><br><br><br>
         <table>
             <tr>
-                <th colspan="5">Australia</th>
+                <th colspan="5" class="country" id="Australia"><u>Australia</u></th>
             </tr>
             <tr>
                 <td>Sydney</td>
@@ -148,6 +184,7 @@
                 <td>Adelaide</td>
             </tr>
         </table>
+        <br><br><br><br><br><br><br><br><br><br>
     </div>
 </body>
 
