@@ -7,6 +7,9 @@ header {
     color: #FFFFFF;
     padding: 20px 40px;
     border-bottom: 3px solid #D8C8E8;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 header h1 {
@@ -23,7 +26,8 @@ header nav {
     display: flex;
     justify-content: right;
     gap: 50px;
-    font-size: 1.5em
+    font-size: 1.5em;
+    margin-right: 60px;
 }
 
 header nav a {
@@ -32,6 +36,7 @@ header nav a {
     font-weight: bold;
     border: 2px solid #FFFFFF;
     padding: 5px 10px;
+    
 }
 
 header nav a:hover {
@@ -59,5 +64,20 @@ form{
 
 table{
     font-size:1.2em;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse; 
+}
+td {
+    width: 20%;
+    text-align: center; 
 }
 
+th {
+    text-align: center;
+    font-size: 24px
+}
+
+body {
+    padding-top: 260px;
+}
