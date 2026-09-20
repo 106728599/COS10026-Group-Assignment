@@ -7,9 +7,6 @@
     <meta name="keywords" content="reference number, job title, salary, responsibilities, requirements">
     <meta name="author" content="Soo Kian Meng, Pang Hui Xin, Jarome Loo, Lee Xiao Yan">
     <title>Web Technology Project Group Assignment</title>
-    <style>
-        
-    </style>
 </head>
 
 <body>
@@ -26,90 +23,104 @@
         </nav>
         <hr>
     </header>
+    <h1><strong>Apply</strong></h1>
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+            <legend>Application Form</legend>
+            <p><label for="jobRefNum">Job Reference Number</label>
+                <input type="text" name="jobRefNum" id="jobRefNum" pattern="[a-zA-Z0-9]{5}" required>
+            </p>
 
-    <h1><strong>About Us</strong></h1>
-    <h2>Our Group's Information</h2>
-    <ol>
-        <li>Group Name: Ice Cream</li>
-        <li>Group Number: G08</li>
-        <li>Class Date And Time: 
-            <ul>
-                <li>Day: Monday</li>
-                <ul>
-                    <li>Time: 4.00pm - 6.00pm</li>
-                </ul>
-                <li>Day: Thursday</li>
-                <ul>
-                    <li>Time: 2.00pm - 4.00pm</li>
-                </ul>
-            </ul>
-        </li>
-    </ol>
+            <p><label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z ]{1,20}" required>            
+            </p>
 
-    <h2>Our Members</h2>
-    <dl>
-        <dt>Soo Kian Meng</dt>
-        <dd>Contribution: Worked on merging GitHub and designing the structure for apply.html and about.html.</dd>
-        <dd>Quote: 不忘初心，方得始终。</dd>
-        <dd>English: Stay true to your original purpose, and you will reach the end.</dd>
-        <br>
-        <dt>Pang Hui Xin</dt>
-        <dd>Contribution: Responsible for header design and CSS styling for apply and about page.</dd>
-        <dd>Quote: 不要让那些做得不够好的事情定义你。继续前行，继续成长，相信自己正在一点一点变得更好。</dd>
-        <dd>English: Don't let what you haven't done well define you. Keep going, keep growing, and trust that you're becoming better, little by little.</dd>
-        <br>
-        <dt>Jarome Loo</dt>
-        <dd>Contribution: Worked on sorting Jira and designing the structure for index.html and jobs.html.</dd>
-        <dd>Quote: 大智若愚，大巧若拙。</dd>
-        <dd>English: Great wisdom looks like folly.</dd>
-        <br>
-        <dt>Lee Xiao Yan</dt>
-        <dd>Contribution: Responsible for CSS styling for index and jobs page.</dd>
-        <dd>Quote: 不积跬步，无以至千里。</dd>
-        <dd>English: A journey of a thousand miles begins with a single step.</dd>
-    </dl>
+            <p><label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z ]{1,20}" required>            
+            </p>
+            <p><label for="dateOfBirth">Date Of Birth: </label> 
+                <!--DATE-->
+                <!--For pattern 0[1-9] means "number starting from 0 followed by any number from 1 to 9, which covers 01 to 09"-->
+                <!--For pattern [12][0-9] means "number starting from either 1 or 2 followed by any number from 1 to 9, which covers 10 to 29"-->
+                <!--For pattern 3[0-1] means "number starting from 3 followed by any number from 0 to 1, which covers 30 to 31"-->
 
-    <h2>Group Photo</h2>
+                <!--MONTH-->
+                <!--For pattern 0[1-9] means "number starting from 0 followed by any number from 1 to 9, which covers 01 to 09"-->
+                <!--For pattern 1[0-2] means "number starting from 1 followed by any number from 0 to 2, which covers 10 to 12"-->
+                
+                <!--YEAR-->
+                <!--For pattern 19[0-9]{2} means "number starting from 19 followed by any 2 numbers from 0 to 9, which covers 1900 to 1999"-->
+                <!--For pattern [2-9][0-9]{3} means "number starting from any number between 2 to 9 followed by any 3 numbers from 0 to 9, which covers 2000 to 9999"-->
 
-    <h2>Fun Facts</h2>
-    <table>
-        <caption>Fun Facts About Our Members</caption>
-        <tr>
-            <th>Name</th>
-            <th>Dream Job</th>
-            <th>Coding Snack</th>
-            <th>Hometown</th>
-        </tr>
+                <!--"/" is the symbol slash in dd/mm/yyyy and "|" is OR-->
+                <input type="text" name="dateOfBirth" id="dateOfBirth" placeholder="dd/mm/yyyy" pattern="(0[1-9]|[12][0-9]|3[0-1]/0[1-9]|1[0-2]/19[0-9]{2}|[2-9][0-9]{3})" required>
+            </p>
+            
+            <fieldset>
+                <legend>Gender: </legend>
+                <p><label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" checked>
+                </p>
+                <p><label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </p>
+            </fieldset>
+
+            <p><label for="streetAddress">Street Address: </label>
+                <input type="text" name="streetAddress" id="streetAddress" pattern="[a-zA-Z0-9 ]{1,40}" required>
+            </p>
+            <p><label for="suburb/town">Suburb/Town: </label>
+                <input type="text" name="suburb/town" id="suburb/town" pattern="[a-zA-Z0-9 ]{1,40}" required>
+            </p>
+            <p><label for="state">State: </label>
+                <select name="state" id="state" required>
+                    <option value="">Please Select</option>
+                    <option value="vic">VIC</option>
+                    <option value="nsw">NSW</option>
+                    <option value="qld">QLD</option>
+                    <option value="nt">NT</option>
+                    <option value="wa">WA</option>
+                    <option value="sa">SA</option>
+                    <option value="tas">TAS</option>
+                    <option value="act">ACT</option>
+                </select>
+            </p>
+            <p><label for="postcode">Postcode: </label>
+                <input type="text" name="postcode" id="postcode" pattern="\d{4}" required>
+            </p>
+            <p><label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p><label for="phoneNumber">Phone Number: </label>
+                <input type="text" name="phoneNumber" id="phoneNumber" pattern="\d{8,12}" required>
+            </p>
+            <p>Skill List: </p>
+            <p>
+                <label for="html">HTML</label>
+                <input type="checkbox" id="html" name="issue[]" value="html" checked>
+
+                <label for="css">CSS</label>
+                <input type="checkbox" id="css" name="issue[]" value="css">
+                
+
+                <label for="javaScript">JavaScript</label>
+                <input type="checkbox" id="javaScript" name="issue[]" value="javaScript">
+                
+
+                <label for="php">PHP</label>
+                <input type="checkbox" id="php" name="issue[]" value="php">
+                
+
+                <label for="mysql">MySQL</label>
+                <input type="checkbox" id="mysql" name="issue[]" value="mysql">
+            </p>
+            <p><label for="otherSkills">Other skills: </label></p>
+            <p><textarea id=otherSkills name="otherSkills" placeholder="Write other skills here..." rows="5" cols="30"></textarea></p>
+        </fieldset>
         
-        <tr>
-            <th>Soo Kian Meng</th>
-            <th>Vulnerability Tester</th>
-            <th>Coffee And Tea</th>
-            <th>Selangor</th>
-        </tr>
-
-        <tr>
-            <th>Pang Hui Xin</th>
-            <th>UI/UX Designer</th>
-            <th>Bubble Tea</th>
-            <th>Johor Bahru</th>
-        </tr>
-
-        <tr>
-            <th>Jarome Loo</th>
-            <th>Boss</th>
-            <th>Nugget</th>
-            <th>Selangor</th>
-        </tr>
-
-        <tr>
-            <th>Lee Xiao Yan</th>
-            <th>Data Analyst</th>
-            <th>French Fries</th>
-            <th>Kuala Lumpur</th>
-        </tr>
-    </table>
-
+        <input type="submit" value="Book">
+        <input type="reset" value="Reset form">
+    </form>
 </body>
 
 </html>
