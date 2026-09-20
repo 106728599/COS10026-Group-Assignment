@@ -28,7 +28,7 @@
         <fieldset>
             <legend>Application Form</legend>
             <p><label for="jobRefNum">Job Reference Number</label>
-                <input type="text" name="jobRefNum" id="jobRefNum" pattern="[a-zA-Z]{5}" required>
+                <input type="text" name="jobRefNum" id="jobRefNum" pattern="[a-zA-Z0-9]{5}" required>
             </p>
 
             <p><label for="firstName">First Name: </label>
@@ -73,10 +73,10 @@
                 <input type="text" name="suburb/town" id="suburb/town" pattern="[a-zA-Z0-9 ]{1,40}" required>
             </p>
             <p><label for="state">State: </label>
-                <select state="state" id="state" required>
+                <select name="state" id="state" required>
                     <option value="">Please Select</option>
                     <option value="vic">VIC</option>
-                    <option value="nsw">NSW</SAoption>
+                    <option value="nsw">NSW</option>
                     <option value="qld">QLD</option>
                     <option value="nt">NT</option>
                     <option value="wa">WA</option>
