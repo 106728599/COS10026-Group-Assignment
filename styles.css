@@ -2,6 +2,12 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+body {
+    padding-top: 260px;
+    background-color: #F3EEF8;
+}
+
+/* HEADER */
 header {
     background-color: #B19ACB;
     color: #FFFFFF;
@@ -43,6 +49,7 @@ header nav a:hover {
     color: #D8C8E8;
 }
 
+/* IMAGES IN INDEX */
 .images {
     height: 95vh;
     background-size: cover;
@@ -58,10 +65,7 @@ header nav a:hover {
     81%, 100% {background-image:url("picture5.jpeg");}
 }
 
-form{
-    font-size: 1.2em;
-}
-
+/* TABLE IN INDEX */
 table{
     font-size:1.2em;
     width: 100%;
@@ -78,52 +82,16 @@ th {
     font-size: 24px
 }
 
-body {
-    padding-top: 260px;
-}
-header {
-    background-color: #B19ACB;
-    color: #FFFFFF;
-    padding: 20px 40px;
-    border-bottom: 3px solid #D8C8E8;
-}
-
-header h1 {
-    margin: 0;
-    color: #FFFFFF;
-}
-
-header h2 {
-  color: #F3EEF8;
-  margin: 8px 0 20px;
-}
-
-header nav {
-    display: flex;
-    justify-content: right;
-    gap: 50px;
-    font-size: 1.5em;
-}
-
-header nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-    border: 2px solid #FFFFFF;
-    padding: 5px 10px;
-}
-
-header nav a:hover {
-    color: #D8C8E8;
-}
-
+/* FORM IN APPLY */
 form {
     background-color: #FFFFFF;
     padding: 30px;
     margin: 30px auto;
     border: 1px solid #D8C8E8;
     max-width: 900px;
+    font-size: 1.2em;
 }
+
 legend{
     color: #6F568E;
     font-size: 24px;
@@ -133,7 +101,7 @@ legend{
 
 form fieldset > p {
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 100px auto;
     gap: 15px;
     align-items: center;
     margin: 15px 0;
@@ -143,111 +111,6 @@ form fieldset legend {
     color: #6F568E;
     font-size: 18px;
     font-weight: bold;
-}
-form fieldset input[type="radio"] {
-    margin-right: 8px;
-}
-form input[type="text"],
-form input[type="date"],
-form input[type="email"],
-form input[type="tel"],
-form select,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #D8C8E8;
-    border-radius: 6px;
-    box-sizing: border-box;
-    font-size: 15px;
-}
-form input:focus,
-form select:focus,
-form textarea:focus {
-    outline: none;
-    border: 2px solid #9B82BB;
-}
-form input[type="checkbox"] {
-    margin-right: 8px;
-}
-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #D8C8E8;
-    border-radius: 6px;
-    box-sizing: border-box;
-    font-size: 15px;
-}
-form textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-form input[type="submit"],
-form input[type="reset"] {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 6px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-right: 10px;
-}
-form input[type="submit"] {
-    background-color: #9B82BB;
-    color: #FFFFFF;
-}
-form input[type="reset"] {
-    background-color: #D8C8E8;
-    color: #6F568E;
-}
-form input[type="submit"]:hover,
-form input[type="reset"]:hover {
-    opacity: 0.85;
-}
-body {
-    background-color: #F3EEF8;
-}
-form input[type="checkbox"] {
-    margin-right: 8px;
-}
-
-form textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-form input[type="submit"],
-form input[type="reset"] {
-    margin-top: 10px;
-}
-form label {
-    font-weight: bold;
-}
-form fieldset {
-    border: 1px solid #D8C8E8;
-    padding: 20px;
-}
-form p {
-    line-height: 1.5;
-}
-form label{
-    font-weight: bold;
-}
-form fieldset {
-    border: 1px solid #D8C8E8;
-    padding: 20px;
-}
-form {
-    background-color: #FFFFFF;
-    padding: 30px;
-    margin: 30px auto;
-    border: 1px solid #D8C8E8;
-    max-width: 900px;
-}
-form fieldset > p {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 15px;
-    align-items: center;
-    margin: 15px 0;
 }
 
 form fieldset > p:has(input[type="checkbox"]) {
@@ -257,31 +120,10 @@ form fieldset > p:has(input[type="checkbox"]) {
     align-items: center;
 }
 
-legend{
-    color: #6F568E;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 0 10px;
-}
-
-form fieldset fieldset > p {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin: 10px 0;
-}
-form fieldset fieldset label {
-    width: 70px;
-}
-
-form fieldset legend {
-    color: #6F568E;
-    font-size: 18px;
-    font-weight: bold;
-}
 form fieldset input[type="radio"] {
-    margin: 0;
+    margin-right: 8px;
 }
+
 form input[type="text"],
 form input[type="date"],
 form input[type="email"],
@@ -295,17 +137,12 @@ form textarea {
     box-sizing: border-box;
     font-size: 15px;
 }
+
 form input:focus,
 form select:focus,
 form textarea:focus {
     outline: none;
     border: 2px solid #9B82BB;
-}
-form input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    accent-color: #9B82BB;
-    margin: 0;
 }
 
 form textarea {
@@ -316,7 +153,7 @@ form textarea {
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 15px;
-    min-height: 200px;
+    min-height: 120px;
     resize: vertical;
 }
 
@@ -329,6 +166,7 @@ form input[type="reset"] {
     font-weight: bold;
     cursor: pointer;
     margin-right: 10px;
+    margin-top: 10px;
 }
 form input[type="submit"] {
     background-color: #9B82BB;
@@ -342,17 +180,16 @@ form input[type="submit"]:hover,
 form input[type="reset"]:hover {
     opacity: 0.85;
 }
-body {
-    background-color: #F3EEF8;
+
+form input[type="checkbox"] {
+    margin-right: 8px;
 }
 
-form input[type="submit"],
-form input[type="reset"] {
-    margin-top: 10px;
+form textarea {
+    min-height: 120px;
+    resize: vertical;
 }
-form label {
-    font-weight: bold;
-}
+
 form fieldset {
     border: 1px solid #D8C8E8;
     padding: 20px;
@@ -360,23 +197,11 @@ form fieldset {
 form p {
     line-height: 1.5;
 }
-@media (max-width: 700px) {
-    header {
-        padding: 20px;
-    }
-    header nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-    form {
-        padding: 20px;
-        margin: 20px;
-    }
-    form fieldset > p {
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
+form label{
+    font-weight: bold;
 }
+
+/* STEPS IN APPLY */
 .apply {
     height: 100vh;
     background-size: cover;
@@ -438,4 +263,102 @@ form p {
 .step4 p {
     color: #555555;
     line-height: 1.5;
+}
+
+/* ABOUT */
+#information {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #f5f0fa;
+    border: 3px solid #B19ACB;
+    border-radius: 12px;
+}
+
+#information li {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+#members {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#members dt {
+    background-color: #B19ACB;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+#members dd {
+    background-color: #f5f0fa;
+    margin: 0;
+    padding: 10px 20px;
+    border-left: 2px solid #B19ACB;
+    border-right: 2px solid #B19ACB;
+}
+
+#members dd:nth-of-type(3n) {
+    border-bottom: 2px solid #B19ACB;
+    border-radius: 0 0 8px 8px;
+}
+
+#members dt:not(:first-of-type) {
+    margin-top: 25px;
+}
+
+#funfact {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#funfact table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+#funfact caption {
+    margin-bottom: 10px;
+    color: #6f5b8e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#funfact th {
+    padding: 12px;
+    background-color: #B19ACB;
+    color: white;
+    border: 3px solid #8f7aaa;
+}
+
+#funfact td {
+    padding: 12px;
+    text-align: center;
+    border: 3px solid #D8C8E8;
+}
+
+#funfact tr:nth-child(even) {
+    background-color: #f5f0fa;
+}
+
+#contactInfo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.contactNumber {
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f0fa;
+    border: 2px solid #B19ACB;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px black;
 }
