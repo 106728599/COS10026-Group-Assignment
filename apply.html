@@ -11,10 +11,10 @@
 
 <body>
     <header>
-        <img src="Images/Company Logo.jpeg" alt="TRAVEXA Logo" width="100" height="100">
-        
+        <h1>TRAVEXA</h1>
         <br>
         <h2>Building The Future Of Travel</h2>
+
         <nav>
             <a href="index.html">Home</a>
             <a href="jobs.html">Jobs</a>
@@ -23,12 +23,14 @@
         </nav>
         <hr>
     </header>
+    <section class="apply"></section>
     <h1><strong>Apply</strong></h1>
+    <h2>Looking For A Job? Sign Up For An Interview!</h2>
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
         <fieldset>
             <legend>Application Form</legend>
             <p><label for="jobRefNum">Job Reference Number</label>
-                <input type="text" name="jobRefNum" id="jobRefNum" pattern="[a-zA-Z0-9]{5}" required>
+                <input type="text" name="jobRefNum" id="jobRefNum" pattern="[A-Za-z0-9]{5}" required>
             </p>
 
             <p><label for="firstName">First Name: </label>
@@ -38,28 +40,14 @@
             <p><label for="lastName">Last Name: </label>
                 <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z ]{1,20}" required>            
             </p>
-            <p><label for="dateOfBirth">Date Of Birth: </label> 
-                <!--DATE-->
-                <!--For pattern 0[1-9] means "number starting from 0 followed by any number from 1 to 9, which covers 01 to 09"-->
-                <!--For pattern [12][0-9] means "number starting from either 1 or 2 followed by any number from 1 to 9, which covers 10 to 29"-->
-                <!--For pattern 3[0-1] means "number starting from 3 followed by any number from 0 to 1, which covers 30 to 31"-->
-
-                <!--MONTH-->
-                <!--For pattern 0[1-9] means "number starting from 0 followed by any number from 1 to 9, which covers 01 to 09"-->
-                <!--For pattern 1[0-2] means "number starting from 1 followed by any number from 0 to 2, which covers 10 to 12"-->
-                
-                <!--YEAR-->
-                <!--For pattern 19[0-9]{2} means "number starting from 19 followed by any 2 numbers from 0 to 9, which covers 1900 to 1999"-->
-                <!--For pattern [2-9][0-9]{3} means "number starting from any number between 2 to 9 followed by any 3 numbers from 0 to 9, which covers 2000 to 9999"-->
-
-                <!--"/" is the symbol slash in dd/mm/yyyy and "|" is OR-->
-                <input type="text" name="dateOfBirth" id="dateOfBirth" placeholder="dd/mm/yyyy" pattern="(0[1-9]|[12][0-9]|3[0-1]/0[1-9]|1[0-2]/19[0-9]{2}|[2-9][0-9]{3})" required>
+            <p><label for="dateOfBirth">Date Of Birth: </label>
+                <input type="text" name="dateOfBirth" id="dateOfBirth" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" required>
             </p>
             
             <fieldset>
                 <legend>Gender: </legend>
                 <p><label for="male">Male</label>
-                    <input type="radio" name="gender" id="male" value="male" checked>
+                    <input type="radio" name="gender" id="male" value="male" checked required>
                 </p>
                 <p><label for="female">Female</label>
                     <input type="radio" name="gender" id="female" value="female">
@@ -89,10 +77,10 @@
                 <input type="text" name="postcode" id="postcode" pattern="\d{4}" required>
             </p>
             <p><label for="email">Email: </label>
-                <input type="email" name="email" id="email" required>
+                <input type="text" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
             </p>
             <p><label for="phoneNumber">Phone Number: </label>
-                <input type="text" name="phoneNumber" id="phoneNumber" pattern="\d{8,12}" required>
+                <input type="tel" name="phoneNumber" id="phoneNumber" pattern="\d{8,12}" required>
             </p>
             <p>Skill List: </p>
             <p>
@@ -117,10 +105,36 @@
             <p><label for="otherSkills">Other skills: </label></p>
             <p><textarea id=otherSkills name="otherSkills" placeholder="Write other skills here..." rows="5" cols="30"></textarea></p>
         </fieldset>
-        
-        <input type="submit" value="Book">
-        <input type="reset" value="Reset form">
+     <input type="submit" value="Book">
+     <input type="reset" value="Reset form">
     </form>
+    <h2>Thank You For Applying! We Will Reply Shortly!</h2>
+    <img class="apply-banner" src="apply_pic4.jpeg" alt="Travel banner">
+    <section class="steps">
+        <h2>What Happens After You Apply?</h2>
+        <div class="step1">
+            <h3>01 - Application Review</h3>
+            <p>Our recruitment team will carefully review all your applications and skills.</p>
+        </div>
+
+        <div class="step2">
+            <h3>02 - Candidate Shortlisting</h3>
+            <p>Candidates who matches with our requirements will be shortlisted for the next stage.</p>
+        </div>
+
+        <div class="step3">
+            <h3>03 - Interview Process</h3>
+            <p>Shortlisted candidates will have the opportunity to take part in an interview and meet our team and further discuss about the role.</p>
+        </div>
+
+        <div class="step4">
+            <h3>04 - Final Selection</h3>
+            <p>Candidates that best fulfill our requirements will be contacted with further information aboust the position.</p>
+        </div>
+    </section>
+
+    <h2>Any Questions Please Reach Out To Our Recruitment Team <a href="about.html#contact">Here</a>.</h2>
+
 </body>
 
 </html>
