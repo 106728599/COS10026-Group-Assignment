@@ -58,11 +58,11 @@ header nav a:hover {
 }
 
 @keyframes changePhoto {
-    0%, 20% {background-image:url("picture1.jpeg");}
-    21%, 40% {background-image:url("picture2.jpeg");}
-    41%, 60% {background-image:url("picture3.jpeg");}
-    61%, 80% {background-image:url("picture4.jpeg");}
-    81%, 100% {background-image:url("picture5.jpeg");}
+    0%, 20% {background-image:url("Images/picture1.jpeg");}
+    21%, 40% {background-image:url("Images/picture2.jpeg");}
+    41%, 60% {background-image:url("Images/picture3.jpeg");}
+    61%, 80% {background-image:url("Images/picture4.jpeg");}
+    81%, 100% {background-image:url("Images/picture5.jpeg");}
 }
 
 /* TABLE IN INDEX */
@@ -210,9 +210,9 @@ form label{
 }
 
 @keyframes changePhoto {
-    0%, 33% {background-image:url("apply_pic1.jpeg");}
-    34%, 66% {background-image:url("apply_pic2.jpeg");}
-    67%, 100% {background-image:url("apply_pic3.jpeg");}
+    0%, 33% {background-image:url("Images/apply_pic1.jpeg");}
+    34%, 66% {background-image:url("Images/apply_pic2.jpeg");}
+    67%, 100% {background-image:url("Images/apply_pic3.jpeg");}
 }
 
 .apply-banner {
@@ -224,7 +224,7 @@ form label{
 }
 
 .steps {
-    background-image: url("apply_background.jpeg");
+    background-image: url("Images/apply_background.jpeg");
     background-size: cover;
     background-position:center;
     padding: 40px;
