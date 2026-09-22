@@ -24,6 +24,8 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            position:sticky;
+            top:170px;
         }
 
         #countryNav a {
@@ -41,6 +43,13 @@
         
         th {
             scroll-margin-top: 260px;
+        }
+        
+        body{
+            background-image:url(Images/jobbackground.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
         }
 
     </style>
@@ -72,8 +81,9 @@
         <input type="text" placeholder="Search destinations">
         <button type="submit">Search</button>
     </form>
-    <p style="font-size: 24px; font-weight: bold;">Featured Destinations</p>
+    
     <nav id="countryNav">
+        <p style="font-size: 24px; font-weight: bold;">Featured Destinations</p>
         <li><a href="#Japan">Japan</a></li>
         <li><a href="#China">China</a></li>
         <li><a href="#Greece">Greece</a></li>
