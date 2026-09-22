@@ -362,3 +362,34 @@ form label{
     border-radius: 15px;
     box-shadow: 0 4px 8px black;
 }
+
+/* FOOTER */
+footer {
+    background-color: #B19ACB;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer links */
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Footer link hover effect */
+footer a:hover {
+    color: #D8C8E8;
+    text-decoration: underline;
+}
+
+/* Copyright text */
+footer p {
+    margin: 12px 0;
+    font-size: 14px;
+}
