@@ -26,6 +26,9 @@
         </div>
         <hr>
     </header>
+
+    <section class="jobimages"></section>
+
     <h1><strong>Join Travexa!!</strong></h1>
     <p style="font-size: 24px;">we create unforgettable journeys across countries. If you're passionate about travel and technology, we'd love to have you on our team!</p>
     <br>
@@ -105,11 +108,26 @@
             }
 
             
+            .jobimages {
+            height: 100vh;
+            background-size: cover;
+            background-position:center;
+            animation:changePhoto 20s infinite;
+            }
+
+            @keyframes changePhoto {
+            0%, 25% {background-image:url("Images/jobimage.jpg");}
+            26%, 50% {background-image:url("Images/jobimage2.jpg");}
+            51%, 75% {background-image:url("Images/jobimage3.jpg");}
+            76%, 100% {background-image:url("Images/jobimage4.jpg");}
+            }
+
+            
     </style>
     <section class="job-posting">
         <div class="pill">Reference Number: TRV26</div>
         <div class="accent-bar">
-            <p style="font-size: 22px;"><strong>Job Title: Data Engineer</strong></p>
+            <h2><strong>Job Title: Data Engineer</strong></h2>
             <p style="font-size: 22px;">Building and maintaining data pipelines that turn all flight, hotel, and booking events into insights for pricing, marketing, and operations teams</p>
         <hr>
             
@@ -154,7 +172,7 @@
     <section class="job-posting">
         <div class="pill">Reference Number: TRV27</div>
         <div class="accent-bar4">
-            <p style="font-size: 22px;"><strong>Job Title: IT Support Specialist</strong></p>
+            <h2><strong>Job Title: IT Support Specialist</strong></h2>
             <p style="font-size: 22px;">Providing technical support and assistance to end-users, troubleshooting hardware and software issues, and ensuring the smooth operation of IT systems within the organization.</p>
         <hr>
             <div class="main-content">
