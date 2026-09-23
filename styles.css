@@ -10,7 +10,7 @@ body {
 /* HEADER */
 header {
     background-color: #B19ACB;
-    color: #FFFFFF;
+    color: #17324D;
     padding: 10px;
     border-bottom: 3px solid #D8C8E8;
     position: fixed;
@@ -46,11 +46,11 @@ header {
 header h1 {
     text-align: center;
     margin: 0;
-    color: #FFFFFF;
+    color: #17324D;
 }
 
 header h2 {
-  color: #F3EEF8;
+  color: #17324D;
   margin: 8px 0 20px;
 }
 
@@ -64,10 +64,10 @@ header nav {
 }
 
 header nav a {
-    color: #FFFFFF;
+    color: #17324D;
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #17324D;
     padding: 5px 10px;
     
 }
@@ -205,12 +205,12 @@ form input[type="reset"] {
     margin-top: 10px;
 }
 form input[type="submit"] {
-    background-color: #9B82BB;
-    color: #FFFFFF;
+    background-color: #be9ceb;
+    color: #17324D;
 }
 form input[type="reset"] {
     background-color: #D8C8E8;
-    color: #6F568E;
+    color: #17324D;
 }
 form input[type="submit"]:hover,
 form input[type="reset"]:hover {
@@ -400,8 +400,8 @@ body.about > img {
 
 #funfact th {
     padding: 16px;
-    background-color: #7F96A3;
-    color: #FFFFFF;
+    background-color: #92acbd;
+    color: #143c57;
     border: 1px solid #AFC0C8;
     font-size: 18px;
 }
@@ -676,7 +676,7 @@ body.about h2#contact {
 /* FOOTER */
 footer {
     background-color: #B19ACB;
-    color: #FFFFFF;
+    color: #17324D;
     text-align: center;
     padding: 25px 20px;
     margin-top: 50px;
@@ -685,7 +685,7 @@ footer {
 
 /* Footer links */
 footer a {
-    color: #FFFFFF;
+    color: #17324D;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
