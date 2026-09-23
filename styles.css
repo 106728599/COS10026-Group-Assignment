@@ -2,6 +2,7 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+/* MAKE BODY CONTENT START FROM RIGHT BELOW HEADER*/
 body {
     padding-top: 160px;
     background-color: #F3EEF8;
@@ -19,6 +20,7 @@ header {
     z-index: 999;
 }
 
+/* MAKE LOGO AND COMPANY NAME IN ONE LINE */
 #headerAlignTop {
     position: relative;
     text-align: center;
@@ -35,6 +37,7 @@ header {
     top: 0;
 }
 
+/* MAKE SLOGAN AND NAV BAR IN ONE LINE */
 #headerAlignBottom {
     display: flex;
     align-items: center;
@@ -86,6 +89,7 @@ header nav a:hover {
     animation:changePhotoCountry 20s infinite;
 }
 
+/* MAKE IMAGES CHANGE EVERY 4 SEC */
 @keyframes changePhotoCountry {
     0%, 20% {background-image:url("Images/Index Background.jpg");}
     21%, 40% {background-image:url("Images/Greece.jpg");}
@@ -182,6 +186,7 @@ th {
     animation:changePhoto 16s infinite;
 }
 
+/* MAKE IMAGES CHANGE EVERY 4 SEC */
 @keyframes changePhoto {
     0%, 25% {background-image:url("Images/jobimage.jpg");}
     26%, 50% {background-image:url("Images/jobimage2.jpg");}
@@ -206,6 +211,7 @@ legend{
     padding: 0 10px;
 }
 
+/* SELECT EVERY p INSIDE FORM AND FIELDSET*/
 form fieldset > p {
     display: grid;
     grid-template-columns: 120px auto;
@@ -284,14 +290,17 @@ form input[type="reset"] {
     margin-right: 10px;
     margin-top: 10px;
 }
+
 form input[type="submit"] {
     background-color: #be9ceb;
     color: #17324D;
 }
+
 form input[type="reset"] {
     background-color: #D8C8E8;
     color: #17324D;
 }
+
 form input[type="submit"]:hover,
 form input[type="reset"]:hover {
     opacity: 0.85;
@@ -715,6 +724,7 @@ body.about h2#contact {
     border-radius: 8px;
 }
 
+/* FOR PHONE OR TABLET VIEW */
 @media screen and (max-width: 768px) {
     header {
         padding: 15px 20px;
@@ -769,7 +779,6 @@ footer {
     font-family: Arial, sans-serif;
 }
 
-/* Footer links */
 footer a {
     color: #17324D;
     text-decoration: none;
@@ -778,13 +787,11 @@ footer a {
     font-size: 20px;
 }
 
-/* Footer link hover effect */
 footer a:hover {
     color: #D8C8E8;
     text-decoration: underline;
 }
 
-/* Copyright text */
 footer p {
     margin: 12px 0;
     font-size: 18px;
