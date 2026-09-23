@@ -221,11 +221,6 @@ form input[type="checkbox"] {
     margin-right: 8px;
 }
 
-form textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
 form fieldset {
     border: 1px solid #D8C8E8;
     padding: 20px;
@@ -354,7 +349,7 @@ body.about > img {
 
 #members dt {
     background-color: #ADA6C5;
-    color: white;
+    color: #1F4E6D;
     font-size: 20px;
     font-weight: bold;
     padding: 14px 25px;
@@ -649,6 +644,7 @@ body.about h2#contact {
         gap: 15px;
         font-size: 1em;
         margin-right: 20px;
+        flex-wrap: wrap;
     }
 
     form {
@@ -670,6 +666,16 @@ body.about h2#contact {
 
     #groupPhoto figure {
         width: 100%;
+    }
+
+    .memberContent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .memberContent img {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
