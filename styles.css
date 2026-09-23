@@ -316,7 +316,7 @@ form label{
 /* ABOUT */
 body.about {
     padding-top: 0;
-    background-image: url("about_background.jpeg");
+    background-image: url("Images/about_background.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
