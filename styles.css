@@ -418,6 +418,17 @@ body.about > img {
     margin-top: 160px;
 }
 
+body.about h2#contact {
+    color: #000000 !important;
+    text-align: center;
+}
+
+.about > h2 {
+    text-align: center;
+}
+
+
+/* GROUP'S INFORMATION */
 #groupTitle {
     font-size: 24px;
     text-align: center;
@@ -426,11 +437,59 @@ body.about > img {
     margin-bottom: 20px;
 }
 
+#information {
+    width: 65%;
+    margin: 20px auto 35px;
+    padding: 30px 40px;
+    background-color: #FCFAF7;
+    border: 3px solid #6F879B;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
 #information li {
     margin: 8px 0;
     font-size: 18px;
 }
 
+#information ol {
+    margin: 0;
+    padding-left: 25px;
+}
+
+#information > ol > li {
+    margin: 12px 0;
+    padding: 13px 18px;
+    background-color: #FFFFFF;
+    border-left: 4px solid #B19ACB;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+#information > ol > li:nth-child(1),
+#information > ol > li:nth-child(2) {
+    font-weight: bold;
+    color: #6F5B8E;
+}
+
+#information > ol > li:nth-child(3) {
+    color: #333333;
+}
+
+#information ul {
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+#information ul li {
+    margin: 8px 0;
+    padding: 6px 10px;
+    background-color: #FBF9FC;
+    font-size: 16px;
+}
+
+
+/* GROUP MEMBER'S INFORMATION */
 #members {
     width: 90%;
     margin: 30px auto;
@@ -461,6 +520,44 @@ body.about > img {
     margin-top: 25px;
 }
 
+.studentID {
+    color: #6F5B8E;
+    font-weight: bold;
+}
+
+.memberContent {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    width: 90%;
+    margin: 0 auto 30px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-left: 2px solid #B19ACB;
+    border-right: 2px solid #B19ACB;
+    border-bottom: 2px solid #B19ACB;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 3px 8px #D5D5D5;
+}
+
+.memberContent img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.memberText {
+    flex: 1;
+}
+
+.memberText dd {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* FUN FACT ABOUT OUR GROUP MEMBERS */
 #funfact {
     width: 90%;
     margin: 35px auto 45px;
@@ -511,6 +608,7 @@ body.about > img {
     color: #6F5B8E;
 }
 
+/* OUR COMPANY'S CONTACT NUMBER */
 #contactInfo {
     display: flex;
     justify-content: center;
@@ -540,57 +638,7 @@ body.about > img {
     box-sizing: border-box;
 }
 
-#information {
-    width: 65%;
-    margin: 20px auto 35px;
-    padding: 30px 40px;
-    background-color: #FCFAF7;
-    border: 3px solid #6F879B;
-    border-radius: 15px;
-    box-sizing: border-box;
-}
-
-#information ol {
-    margin: 0;
-    padding-left: 25px;
-}
-
-#information > ol > li {
-    margin: 12px 0;
-    padding: 13px 18px;
-    background-color: #FFFFFF;
-    border-left: 4px solid #B19ACB;
-    border-radius: 8px;
-    font-size: 17px;
-}
-
-#information > ol > li:nth-child(1),
-#information > ol > li:nth-child(2) {
-    font-weight: bold;
-    color: #6F5B8E;
-}
-
-#information > ol > li:nth-child(3) {
-    color: #333333;
-}
-
-#information ul {
-    margin-top: 10px;
-    padding-left: 25px;
-}
-
-#information ul li {
-    margin: 8px 0;
-    padding: 6px 10px;
-    background-color: #FBF9FC;
-    font-size: 16px;
-}
-
-.studentID {
-    color: #6F5B8E;
-    font-weight: bold;
-}
-
+/* GROUP PHOTO */
 #groupPhoto {
     width: 85%;
     margin: 30px auto 50px;
@@ -645,6 +693,7 @@ body.about > img {
     font-weight: bold;
 }
 
+/* ACKNOWLEDGEMENT */
 #acknowledgement {
     width: 80%;
     margin: 30px auto 45px;
@@ -665,47 +714,7 @@ body.about > img {
     text-align: center;
 }
 
-body.about h2#contact {
-    color: #000000 !important;
-    text-align: center;
-}
-
-.about > h2 {
-    text-align: center;
-}
-
-.memberContent {
-    display: flex;
-    align-items: center;
-    padding: 25px 30px;
-    width: 90%;
-    margin: 0 auto 30px;
-    box-sizing: border-box;
-    background-color: #FFFFFF;
-    border-left: 2px solid #B19ACB;
-    border-right: 2px solid #B19ACB;
-    border-bottom: 2px solid #B19ACB;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 3px 8px #D5D5D5;
-}
-
-.memberContent img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 30px;
-}
-
-.memberText {
-    flex: 1;
-}
-
-.memberText dd {
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
+/* HOMETOWN MAP */
 #hometownMap {
     width: 75%;
     margin: 35px auto 50px;
